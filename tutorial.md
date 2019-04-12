@@ -4,7 +4,7 @@ Predicting residential buildings
 Background
 ----------
 
-This post outlines the analytical approach taken to predict whether buildings are residential or not, published in PLoS ONE [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0204399). In summary, we use ensemble machine learning, stacking multiple machine learning algorithms to create a 'SuperLearner' algorithm which, in theory, produces high prediction accuracy than any of the algorithms on their own. I'm not going to provide a detailed explanation of stacking here, there are plenty of great descriptions out there, including this and [this](https://www.kdnuggets.com/2017/02/stacking-models-imropved-predictions.html). Here, we are going to focus on what we did.
+This post outlines the analytical approach taken to predict whether buildings are residential or not, published in PLoS ONE [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0204399). In summary, we use ensemble machine learning, stacking multiple machine learning algorithms to create a 'SuperLearner' algorithm which, in theory, produces high prediction accuracy than any of the algorithms on their own. I'm not going to provide a detailed explanation of stacking here, there are plenty of great descriptions out there, including [this](https://biostats.bepress.com/cgi/viewcontent.cgi?article=1269&context=ucbbiostat) and [this](https://www.kdnuggets.com/2017/02/stacking-models-imropved-predictions.html). Here, we are going to focus on what we did.
 
 
 
@@ -15,6 +15,7 @@ First get the necessary libraries
     library(Hmisc)
     library(rgdal)
     library(wesanderson)
+    library(SuperLearner)
 
 Load the helper functions from the `helper_function.R` script
 
