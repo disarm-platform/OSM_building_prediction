@@ -7,6 +7,7 @@ Background
 This post outlines the analytical approach taken to predict whether buildings are residential or not, published in PLoS ONE [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0204399). In summary, we use ensemble machine learning, stacking multiple machine learning algorithms to create a 'SuperLearner' algorithm which, in theory, produces high prediction accuracy than any of the algorithms on their own. I'm not going to provide a detailed explanation of stacking here, there are plenty of great descriptions out there, including this and [this](https://www.kdnuggets.com/2017/02/stacking-models-imropved-predictions.html). Here, we are going to focus on what we did.
 
 
+
 First get the necessary libraries
 
     library(rgdal)
@@ -123,11 +124,6 @@ Run SuperLearner
       method = method.AUC
     )
 
-    ## Warning: namespace 'xgboost' is not available and has been replaced
-    ## by .GlobalEnv when processing object 'sl_model_binom'
-
-    ## Warning: namespace 'earth' is not available and has been replaced
-    ## by .GlobalEnv when processing object 'sl_model_binom'
 
 Take a look at the model output
 
